@@ -35,3 +35,7 @@ a {
 	color: transparent;
 	text-decoration: underline;
 }
+
+a:hover {
+	color:#ff6666;
+}
