@@ -6,19 +6,20 @@
 			}
 
 			#container {
-				background-image: linear-gradient(315deg, #66ffa2, #3bffff, #66ffa2, #3bffff);
-				background-size:400%,400%;
+				background-image: linear-gradient(315deg, #66ffa2, #3bffff, #66ffa2, #3bffff, #66ffa2);
+				background-size:400%,100%;
 				background-clip:text;
+				-webkit-background-clip: text;
 
 				animation-name: MoveGradient;
-				animation-duration: 10s;
+				animation-duration: 15s;
 				animation-timing-function: linear;
 				animation-iteration-count: infinite;
 			}
 
 			@keyframes MoveGradient {
 				from		{background-position:0%,0%;}
-				to		{background-position:100%,100%;}
+				to		{background-position:80%,0%;}
 			}
 
 			#content {
@@ -28,13 +29,12 @@
 				margin-bottom:20px;
 				font-family: Arial, helvetica, sans-serif;
 				color: #e6e6e6;
-				background-clip:text;
+				min-font-size:70px;
 			}
 
 			a {
 				color: transparent;
 				text-decoration: underline;
-				mix-blend-mode: multiply;
 			}
 		</style>
 		<script>
