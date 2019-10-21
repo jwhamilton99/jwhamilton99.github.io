@@ -13,6 +13,7 @@ body {
 	animation-duration: 45s;
 	animation-timing-function: ease;
 	animation-iteration-count: infinite;
+	max-width:1250px;
 }
 
 @keyframes MoveGradient {
