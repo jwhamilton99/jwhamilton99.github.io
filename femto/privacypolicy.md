@@ -1,0 +1,6 @@
+# Femto Privacy Policy
+
+Femto collects no data. There is no server associated with me to even allow that. 
+To use Dropbox, Femto uses their HTTP API to log in/create new files.
+Using iCloud for file creation, and opening files from other providers (Dropbox, Google Drive, etc.) goes through the Files app.
+I have no reason to want to see what you use Femto for. Just do your thing.
