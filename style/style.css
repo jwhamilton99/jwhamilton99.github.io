@@ -2,7 +2,6 @@ body {
 	background-color: #1a1a1a;
 }
 
-/*@supports not (-webkit-background-clip:text) or not (animation-name:MoveGradient) {*/
 #container {
 	max-width:1250px;
 }
@@ -13,7 +12,6 @@ a {
 	text-shadow:none;
 	text-decoration:none;
 }
-/* } */
 
 @supports (-webkit-background-clip:text) and (animation-name: MoveGradient) {
 	#container {
