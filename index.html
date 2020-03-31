@@ -15,6 +15,8 @@
 			if((date.getDate() == 1 && date.getMonth() == 3) || c == 1) {
 				if(c != 0 || c == 1) {
 					window.location = "/fools/";
+				} else if(c == 0) {
+					
 				}
 			}
 		</script>
@@ -22,6 +24,12 @@
 	<body>
 		<div id="container">
 			<p id="content">Hi, I'm <a href="/about">Justin Hamilton</a>. I make a text editor called <a href="https://www.femtoeditor.com">Femto</a>, a few <a href="/mac">macOS apps</a>, and a <a href="/miscellaneous">bunch of other tiny things</a>. I also do some <a href="https://medium.com/@jwhamilton99">writing</a> and occasionally make <a href="/music">electronic music</a>. Pleased to meet you.</p>
+			<script>
+				var url = new URL(document.location);
+				if(url.searchParams.get("redirect") == 0) {
+					document.getElementById("content").innerHTML+=" I hope you liked that little April Fools joke.";
+				}
+			</script>
 		</div>
 	</body>
 </html>
