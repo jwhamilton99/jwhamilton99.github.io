@@ -4,6 +4,20 @@
 		<link rel="shortcut icon" href="logo.png" />
 		<link href="https://micro.blog/jwhamilton_" rel="me" />
 		<title>Justin Hamilton</title>
+		<script>
+			var date = new Date()
+			console.log(date.getDate())
+			console.log(date.getMonth())
+			
+			var url = new URL(document.location);
+			var c = url.searchParams.get("redirect");
+			
+			if((date.getDate() == 1 && date.getMonth() == 3) || c == 1) {
+				if(c != 0 || c == 1) {
+					window.location = "/fools";
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<div id="container">
