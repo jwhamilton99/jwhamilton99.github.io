@@ -1,8 +1,7 @@
 //Happy Pride Month!
-var d = new Date();
-if(d.getMonth() == 5) {
-	window.onload = function(e) {
-		var white = "#bfbfbf";
+
+function setFlag() {
+	var white = "#bfbfbf";
 		var black = "#595959";
 	
 		var blue = "#1a75ff";
@@ -34,7 +33,7 @@ if(d.getMonth() == 5) {
 		var enby = [yellow, white, purple, black];
 		var lesbian = [darkPurple, lightPurple, pink, white, lightPink, lightRed, darkRed];
 		
-		var flagStrings = ["", "Bisexual", "Pansexual","Asexual","Intersex","Transgender","Genderfluid","Genderqueer","Polysexual","Agender","Aromantic","Nonbinary","Lesbian"];
+		var flagStrings = ["Gay", "Bisexual", "Pansexual","Asexual","Intersex","Transgender","Genderfluid","Genderqueer","Polysexual","Agender","Aromantic","Nonbinary","Lesbian"];
 		var flags = [trad, bi, pan, ace, intersex, trans, genderfluid, genderqueer, poly, agender, aro, enby, lesbian];
 		var links = ["https://lgbt.wikia.org/wiki/Gay_and_Lesbian_Pride_Month","https://lgbt.wikia.org/wiki/Bisexuality","https://lgbt.wikia.org/wiki/Pansexuality","https://lgbt.wikia.org/wiki/Asexuality","https://lgbt.wikia.org/wiki/Intersexuality","https://gender.wikia.org/wiki/Transgender","https://gender.wikia.org/wiki/Gender_Fluid","https://gender.wikia.org/wiki/Genderqueer","https://lgbt.wikia.org/wiki/Polysexuality","https://gender.wikia.org/wiki/Agender","https://lgbt.wikia.org/wiki/Aromantic","https://gender.wikia.org/wiki/Non-binary","https://lgbt.wikia.org/wiki/Lesbian"];
 		
@@ -61,5 +60,13 @@ if(d.getMonth() == 5) {
 		gradString = (gradString.substring(0,gradString.length-1))+")";
 	
 		document.body.style.setProperty("--link-gradient", gradString);
+		
+		return flagStrings[flagIndex];
+}
+
+var d = new Date();
+if(d.getMonth() == 5) {
+	window.onload = function(e) {
+		setFlag();
 	}
 }
