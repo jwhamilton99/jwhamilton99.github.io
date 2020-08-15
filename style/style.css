@@ -1,13 +1,3 @@
-:root {
-	--clip-not-supported-fallback-color: #3bffff;
-	--link-gradient: linear-gradient(to bottom left, #3bffff,#6dffa2,#3bffff,#6dffa2,#3bffff);
-	--background-end-position-x:400%;
-	--background-end-position-y:800%;
-	--background-size-x:200%;
-	--background-size-y:100%;
-	--background-gradient-length:45s;
-}
-
 body {
 	background-color: #1a1a1a;
 }
@@ -17,39 +7,10 @@ body {
 }
 
 a {
-	color: var(--clip-not-supported-fallback-color);
+	color: #3bffe0;
 	background-color:clear;
 	text-shadow:none;
 	text-decoration:none;
-}
-
-@supports (-webkit-background-clip:text) and (animation-name: MoveGradient) {
-	.container {
-		background-image: var(--link-gradient);
-		background-size: var(--background-size-x),var(--background-size-y);
-		background-repeat: repeat-x;
-		background-clip:text;
-		-webkit-background-clip: text;
-
-		animation-name: MoveGradient;
-		animation-duration: var(--background-gradient-length);
-		animation-timing-function: ease;
-		animation-iteration-count: infinite;
-		max-width:1250px;
-	}
-
-	@keyframes MoveGradient {
-		0%	{background-position: 0%,0%;}
-		50%	{background-position: var(--background-end-position-x), var(--background-end-position-y);}
-		100%	{background-position: 0%,0%;}
-	}
-	
-	a {
-		color: transparent;
-		text-decoration: none;
-		background-color:clear;
-		text-shadow:none;
-	}
 }
 
 .content {
