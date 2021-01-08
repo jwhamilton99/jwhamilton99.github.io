@@ -12,6 +12,11 @@ a {
 	text-decoration:none;
 }
 
+@font-face {
+	font-family: "SF Mono Light";
+	src:url("SF-Mono-Light.otf");
+}
+
 .content {
 	margin-left:20px;
 	margin-top:20px;
