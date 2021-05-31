@@ -1,15 +1,21 @@
+
+
 body {
 	background-color: #1a1a1a;
+	--link-gradient: linear-gradient(to bottom right, #3cfbff, #6dff77);
 }
 
 .container {
 	max-width:1250px;
+	-webkit-background-clip:text;
+	background-image: var(--link-gradient);
 }
 
 a {
-	color: #3bffe0;
-	text-shadow:none;
+	/* color: #3bffe0; */
 	text-decoration:none;
+	-webkit-text-fill-color:transparent;
+	text-shadow:none;
 }
 
 .content {
@@ -24,5 +30,6 @@ a {
 
 a:hover {
 	color:#ff6666;
+	-webkit-text-fill-color:#ff6666;
 	text-decoration: underline;
 }
