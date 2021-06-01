@@ -67,8 +67,6 @@ function setFlag() {
 function pageLoaded() {
 	var d = new Date();
 	if(d.getMonth() == 5) {
-		window.onload = function(e) {
-			setFlag();
-		}
+		setFlag();
 	}
 }
