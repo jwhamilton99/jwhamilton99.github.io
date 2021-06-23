@@ -2,7 +2,6 @@
 
 body {
 	background-color: #1a1a1a;
-	--link-gradient: linear-gradient(to bottom right, #3cfbff, #6dff77);
 }
 
 .container {
@@ -13,21 +12,6 @@ a {
 	color: #3bffe0;
 	text-decoration:none;
 	text-shadow:none;
-}
-
-@supports(-webkit-background-clip:text) {
-	.container {
-		max-width:1250px;
-		-webkit-background-clip:text;
-		background-image: var(--link-gradient);
-	}
-	
-	a {
-		/* color: #3bffe0; */
-		text-decoration:none;
-		-webkit-text-fill-color:transparent;
-		text-shadow:none;
-	}
 }
 
 .content {

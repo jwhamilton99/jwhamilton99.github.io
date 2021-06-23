@@ -59,7 +59,7 @@ function setFlag() {
 		
 		gradString = (gradString.substring(0,gradString.length-1))+")";
 	
-		document.body.style.setProperty("--link-gradient", gradString);
+		// document.body.style.setProperty("--link-gradient", gradString);
 		
 		return flagStrings[flagIndex];
 }
