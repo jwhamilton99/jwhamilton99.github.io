@@ -1,31 +1,35 @@
 
 
 body {
-	background-color: #1a1a1a;
+	--background-color: #1a1a1a;
+	--link-color: #3bffe0;
+	--text-color: #e6e6e6;
+	--link-hover-color: #ff6666;
+	--max-width: 1250px;
+	--font-size: 70px;
+	--margin-size: 20px;
+	
+	background-color: var(--background-color);
 }
 
 .container {
-	max-width:1250px;
+	max-width:var(--max-width);
 }
 
 a {
-	color: #3bffe0;
+	color: var(--link-color);
 	text-decoration:none;
 	text-shadow:none;
 }
 
 .content {
-	margin-left:20px;
-	margin-top:20px;
-	margin-right:20px;
-	margin-bottom:20px;
+	margin: var(--margin-size);
 	font-family: Arial, helvetica, sans-serif;
-	color: #e6e6e6;
-	font-size: 70px;
+	color: var(--text-color);
+	font-size: var(--font-size);
 }
 
 a:hover {
-	color:#ff6666;
-	-webkit-text-fill-color:#ff6666;
+	color:var(--link-hover-color);
 	text-decoration: underline;
 }
