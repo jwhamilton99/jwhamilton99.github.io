@@ -1,17 +1,144 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <script type="text/javascript" src="scripts/pride.js"></script>
-    <title>Justin Hamilton</title>
-  </head>
-  <body onload="pageLoaded()">
-    <div class="container">
-      <p class="content" id="indexContent">
-        Hi, I'm <a href="/about">Justin Hamilton</a>. I make some <a href="/ios">iOS apps</a>, a few
-        <a href="/mac">macOS apps</a>, and a bunch of
-        <a href="/miscellaneous">other things</a>. I also do some
-        <a href="https://blog.jwhamilton.co">writing</a>. Pleased to meet you.
-      </p>
-    </div>
-  </body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="headerColumnLeft">
+					<h1 id="title">Justin Hamilton</h1>
+				</div>
+				<div id="headerColumnRight">
+					<!-- <h1 id="title">Justin Hamilton</h1> -->
+				</div>
+			</div>
+			<div id="columnContainer">
+				<div id="columnLeft">
+					<div class="section" id="about">
+						<h2 class="sectionTitle firstSectionTitle">About</h2>
+						<p class="aboutItem" id="aboutItemFirst">I'm a fourth-year computer science student at the University of Delaware.</p>
+						<p class="aboutItem">I like woodworking, <a href="https://www.discogs.com/user/jwhamilton_/collection">vinyl</a>, coffee, and watches.</p>
+						<p class="aboutItem">I've been coding regularly since 2010, and was heavily involved in app development for <a href="https://github.com/jwhamilton99/pebble-archive">Pebble</a>. Now I work on personal projects and school.</p>
+						<p class="aboutItem">I also have a <a href="https://blog.jwhamilton.co">blog</a>, but it isn't updated that often.</p>
+					</div>
+					<div class="section">
+						<h2 class="sectionItemTitle">Contact</h2>
+						<p class="aboutItem">Twitter: <a href="https://www.twitter.com/jwhamilton_">@jwhamilton_</a></p>
+						<p class="aboutItem">Email: <a href="mailto:me@jwhamilton.co">me@jwhamilton.co</a></p>
+					</div>
+				</div>
+				<div id="columnRight">
+					<div class="section">
+						<h2 class="sectionTitle firstSectionTitle">iOS Apps</h2>
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.femtoeditor.com">Femto Editor</a></p>
+							<p class="sectionItemLink"><a href="https://www.femtoeditor.com">femtoeditor.com</a></p>
+							<p class="sectionItemDescription">A simple, lightweight plaintext editor for iOS.</p>
+						</div>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.dotmusicplayer.com">Dot Music Player</a></p>
+							<p class="sectionItemLink"><a href="https://www.dotmusicplayer.com">dotmusicplayer.com</a></p>
+							<p class="sectionItemDescription">An Apple Music player reminiscent of the pre-iOS 8 music app.</p>
+						</div>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="/">Affirmations</a></p>
+							<p class="sectionItemLink"><a href="/">coming soon</a></p>
+							<p class="sectionItemDescription">A self-care tool that delivers compliments and positive reminders.</p>
+						</div>
+					</div>
+					<div class="section">
+						<h2 class="sectionTitle">macOS Apps</h2>
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://github.com/jwhamilton99/menu-bar-splitter">Menu Bar Splitter</a></p>
+							<p class="sectionItemLink"><a href="https://github.com/jwhamilton99/menu-bar-splitter">github.com/jwhamilton99/menu-bar-splitter</a></p>
+							<p class="sectionItemDescription">Adds dividers to your Mac's menu bar to keep it organized.</p>
+						</div>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://github.com/jwhamilton99/dark-mode-wallpaper">Dark Mode Wallpaper Switcher</a></p>
+							<p class="sectionItemLink"><a href="https://github.com/jwhamilton99/dark-mode-wallpaper">github.com/jwhamilton99/dark-mode-wallpaper</a></p>
+							<p class="sectionItemDescription">Changes your wallpaper based on your Mac's appearance.</p>
+						</div>
+					</div>
+					<div class="section">
+						<h2 class="sectionTitle">Tools</h2>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/whatismyhackettnumber">What Is My Hackett Number?</a></p>
+							<p class="sectionItemLink"><a href="https://www.jwhamilton.co/whatismyhackettnumber">jwhamilton.co/whatismyhackettnumber</a></p>
+							<p class="sectionItemDescription">A computers-per-capita calculator.</p>
+						</div>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/flashcards">Flashcards</a></p>
+							<p class="sectionItemLink"><a href="https://www.jwhamilton.co/flashcards">jwhamilton.co/flashcards</a></p>
+							<p class="sectionItemDescription">A study tool specifically designed for my method of memorization.</p>
+						</div>
+					</div>
+					<div class="section">
+						<h2 class="sectionTitle">Games</h2>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/dogcowandrainbowcursor">The Adventures of Dogcow and Spinning Rainbow Cursor in Finderland</a></p>
+							<p class="sectionItemLink"><a href="https://www.jwhamilton.co/dogcowandrainbowcursor">jwhamilton.co/dogcowandrainbowcursor</a></p>
+							<p class="sectionItemDescription">An endless runner made in reference to an <a href="https://www.relay.fm/upgrade/339">episode of Upgrade</a>.</p>
+						</div>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/spyalias">SpyAlias</a></p>
+							<p class="sectionItemLink"><a href="https://www.jwhamilton.co/spyalias">jwhamilton.co/spyalias</a></p>
+							<p class="sectionItemDescription">A version of the tabletop game <a href="https://codenamesgame.com/">Codenames</a> that you can play electronically.</p>
+						</div>
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/circleshooter">Circle Shooter</a></p>
+							<p class="sectionItemLink"><a href="https://www.jwhamilton.co/circleshooter">jwhamilton.co/circleshooter</a></p>
+							<p class="sectionItemDescription">A game I made in 2014.</p>
+						</div>
+					</div>
+					
+					<div class="section">
+						<h2 class="sectionTitle">Music</h2>
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://soundcloud.com/jwhamilton99">Electronic Music</a></p>
+							<p class="sectionItemLink"><a href="https://soundcloud.com/jwhamilton99">soundcloud.com/jwhamilton99</a></p>
+							<p class="sectionItemDescription">A collection of electronic music I've written over the years.</p>
+						</div>
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/playlists">Yearly Playlists</a></p>
+							<p class="sectionItemLink"><a href="https://www.jwhamilton.co/playlists">jwhamilton.co/playlists</a></p>
+							<p class="sectionItemDescription">The yearly playlists I've been making since 2019.</p>
+						</div>
+					</div>
+					
+					<div class="section">
+						<h2 class="sectionTitle">Miscellaneous</h2>
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.twitter.com/oldtownbot">Old Town Bot</a></p>
+							<p class="sectionItemLink"><a href="https://www.twitter.com/oldtownbot">twitter.com/oldtownbot</a></p>
+							<p class="sectionItemDescription">A twitter bot that takes its _____ to the old town _____.</p>
+						</div>
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/thenewmacproisstaringatme">The New Mac Pro Is Staring At Me</a></p>
+							<p class="sectionItemLink"><a href="https://www.jwhamilton.co/thenewmacproisstaringatme">jwhamilton.co/thenewmacproisstaringatme</a></p>
+							<p class="sectionItemDescription">This one is exactly what it sounds like.</p>
+						</div>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/designs">Designs</a></p>
+							<p class="sectionItemLink"><a href="https://www.jwhamilton.co/designs">jwhamilton.co/designs</a></p>
+							<p class="sectionItemDescription">A collection of designs I've done.</p>
+						</div>
+						
+						<div class="sectionItem">
+							<p class="sectionItemTitle"><a class="sectionItemTitleLink" href="https://www.jwhamilton.co/experiments">Experiments</a></p>
+							<p class="sectionItemLink"><a href="https://github.com/jwhamilton99/experiments">github.com/jwhamilton99/experiments</a></p>
+							<p class="sectionItemDescription">A collection of experiments I've either finished or abandoned.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
