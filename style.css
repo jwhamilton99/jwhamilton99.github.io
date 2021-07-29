@@ -12,7 +12,7 @@ body {
 	--text-color: #fffff7;
 	--link-color: #85d3dc;
 	--link-hover-color: #d55b71;
-	--secondary-text-color: #e7e6df;
+	--secondary-text-color: #dbdad4;
 }
 
 a {
@@ -170,7 +170,7 @@ a:hover {
 	
 	#container {
 		margin:20px;
-		margin-bottom:50px;
+		margin-bottom:15vw;
 	}
 	
 	#header {
