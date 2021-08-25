@@ -14,7 +14,7 @@
 	    	url(fonts/iAWriterMonoS-Bold.eot) format('eot'),
 			url(fonts/iAWriterMonoS-Bold.ttf) format('ttf');
 	font-weight:bold;
-	font-display: optional;
+	font-display: fallback;
 }
 
 @font-face {
@@ -34,7 +34,7 @@ body {
 	align-items:center;
 	justify-content:center;
 	color: var(--text-color);
-	font-family: "iA Writer Mono";
+	font-family: "iA Writer Mono", "Courier New", monospace;
 	font-weight:500;
 	font-size:1.1em;
 	
@@ -68,7 +68,6 @@ a:hover {
 #title {
 	font-weight:bold;
 	margin-bottom:0px;
-	font-family: "iA Writer Mono";
 	text-align:right;
 }
 
@@ -150,7 +149,6 @@ a:hover {
 	margin-bottom:5px;
 	/* background-color:turquoise; */
 	font-weight:bold;
-	font-family: "iA Writer Mono";
 }
 
 .firstSectionTitle {
@@ -171,7 +169,6 @@ a:hover {
 .sectionItemTitle {
 	font-weight:700;
 	margin-bottom:8px;
-	font-family: "iA Writer Mono";
 }
 
 .sectionItemTitleLink {
