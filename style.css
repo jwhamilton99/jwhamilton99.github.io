@@ -130,7 +130,7 @@ a:hover {
 }
 
 #aboutItemFirst {
-	margin-top:0px;
+	margin-top:10px;
 }
 
 .section {
@@ -178,7 +178,7 @@ a:hover {
 
 .sectionItemTitleLink:hover {
 	text-decoration:none;
-	color: var(--text-color);
+	color: var(--link-hover-color);
 }
 
 .sectionItemLink {
