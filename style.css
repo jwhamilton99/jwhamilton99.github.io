@@ -43,6 +43,7 @@ body {
 	--link-color: #85d3dc;
 	--link-hover-color: #d55b71;
 	--secondary-text-color: #dbdad4;
+	--secondary-text-color-light: #6d6d6d;
 }
 
 a {
@@ -147,7 +148,6 @@ a:hover {
 .sectionTitle {
 	margin-top:5px;
 	margin-bottom:5px;
-	/* background-color:turquoise; */
 	font-weight:bold;
 }
 
@@ -156,7 +156,6 @@ a:hover {
 }
 
 .sectionItem {
-	/* background-color:pink; */
 	margin-top:10px;
 	margin-bottom:15px;
 }
@@ -202,18 +201,51 @@ a:hover {
 }
 
 #content404 {
-	/* max-width:1000px; */
 	margin:20px;
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (prefers-color-scheme:light) {
+	body {
+		background-color:var(--text-color);
+		color:var(--background-color);
+	}
+	
+	a {
+		color:var(--link-hover-color);
+	}
+	
+	a:hover {
+		color:var(--link-color);
+	}
+	
+	.sectionItemTitleLink {
+		text-decoration:none;
+		color: var(--background-color);
+	}
+	
+	.sectionItemTitleLink:hover {
+		text-decoration:none;
+		color: var(--link-color);
+	}
+	
+	.aboutItem {
+		color:var(--secondary-text-color-light);
+	}
+	
+	.sectionItemDescription {
+		color:var(--secondary-text-color-light);
+	}
+}
+
+@media screen and (orientation: portrait), screen and (max-width:1020px) {
+/* @media screen and (orientation:portrait) { */
 	body {
 		font-size:4vw;
 	}
 	
 	#container {
 		margin:20px;
-		margin-bottom:15vw;
+		/* margin-bottom:15vw; */
 	}
 	
 	#header {
@@ -246,7 +278,7 @@ a:hover {
 	
 	#title {
 		margin-top:0px;
-		margin-bottom:10px;
+		margin-bottom:20px;
 		text-align:left;
 	}
 }
